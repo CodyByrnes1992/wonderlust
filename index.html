@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Wonderlust Travel- Destination Majorca</title>
+    
 </head>
 <body>
+<a href="#main-content">Skip to main content</a>
+<a href="#plan-your-trip">Skip to plan your trip</a>
+<a href="#testimonials">Skip to testimonials</a>
+<a href="#about-your-destination">Skip to about your destination</a>
+<a href="#contact-us">Skip to contact us</a>
 
     <header>
         <h1>Destination Majorca</h1>
@@ -29,7 +35,7 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main-content">
         <article>
             <h2>Majorca</h2>
             <section id="intro">
@@ -246,32 +252,32 @@
             <form>
                 <div>
                     <label for="firstname">First Name<span>*</span></label>
-                    <input id="firstname" type="text">
+                    <input id="firstname" type="text" required="">
                 </div>
                 <div>
                     <label for="lastname">Last Name<span>*</span></label>
-                    <input id="lastname" type="text">
+                    <input id="lastname" type="text" required="">
                 </div>
                 <div>
                     <label for="email">Email<span>*</span></label>
-                    <input id="email" type="email">
+                    <input id="email" type="email" required="">
                 </div>
                 <div>
                     <label for="phone">Phone<span>*</span></label>
-                    <input id="phone" type="text">
+                    <input id="phone" type="text" required="">
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input id="contact-email" type="email" value="email">
-                        <label for="email">Email</label>
+                        <input id="contact-email" type="radio" value="email" name="pref-method">
+                        <label for="contact-email">Email</label>
                     </div>
                     <div>
-                        <input id="text" type="text" value="text">
-                        <label for="text">Text</label>
+                        <input id="contact-text" type="radio" value="text" name="pref-method">
+                        <label for="contact-text">Text</label>
                     </div>
                     <div>
-                        <input id="contact-phone" type="text" value="phone">
+                        <input id="contact-phone" type="radio" value="phone" name="pref-method">
                         <label for="contact-phone">Phone</label>
                     </div>
                 </fieldset>
@@ -301,7 +307,7 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+                <button type="submit" id="submit">Submit</button>
             </form>
         </section>
         <section id="legal">
