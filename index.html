@@ -108,6 +108,7 @@
                     -->
                         <img src="images/miranda-blake-L.png" 
                         srcset="images/miranda-blake-S.png 404w, images/miranda-blake-M.png 920w, images/miranda-blake-L.png 1280w"
+                        sizes="(min-width: 920px) 100vw, (min-width: 1280px) 50vw"
                         alt="miranda images">
                         <div>
                         <h3>Miranda Blake</h3>
@@ -127,6 +128,7 @@
                     -->
                         <img src="images/max-winter-L.png"
                         srcset="images/max-winter-S.png 404w, images/max-winter-M.png 920w, images/max-winter-L.png 1280w"
+                        sizes="(min-width: 920px) 100vw, (min-width: 1280px) 50vw"
                         alt="max winter">
                         <div>
                         <h3>Max Winter</h3>
@@ -146,6 +148,7 @@
                     -->
                     <img src="images/ines-villegoes-L.png"
                     srcset="images/ines-villegoes-S.png 404w, images/ines-villegoes-M.png 920w, images/ines-villegoes-L.png 1280w"
+                    sizes="(min-width: 920px) 100vw, (min-width: 1280px) 50vw"
                     alt="ines Villegoes">
                     <div>
                         <h3>Inés Villegoes</h3>
@@ -165,6 +168,7 @@
                     -->
                         <img src="images/carmen-lorenzo-L.png" 
                         srcset="images/carmen-lorenzo-S.png 404w, images/carmen-lorenzo-M.png 920w, images/carmen-lorenzo-L.png 1280w"
+                        sizes="(min-width: 920px) 100vw, (min-width: 1280px) 50vw"
                         alt="carmen lorenzo">
                         <div>
                         <h2>Carmen Lorenzo</h2>
@@ -245,30 +249,30 @@
                     <input id="firstname" type="text">
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="lastname">Last Name<span>*</span></label>
+                    <input id="lastname" type="text">
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span>*</span></label>
+                    <input id="email" type="email">
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input id="phone" type="text">
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input id="contact-email" type="email" value="email">
+                        <label for="email">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input id="text" type="text" value="text">
+                        <label for="text">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input id="contact-phone" type="text" value="phone">
+                        <label for="contact-phone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
