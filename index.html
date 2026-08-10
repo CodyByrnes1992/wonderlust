@@ -249,41 +249,41 @@
     <footer>
         <section id="contact-us">
             <h2>Contact Us</h2> <span id="required">(*required)</span>
-            <form>
+            <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
                 <div>
-                    <label for="firstname">First Name<span>*</span></label>
-                    <input id="firstname" type="text" required="">
+                    <label for="first-name">First Name<span>*</span></label>
+                    <input id="first-name" name="first-name" type="text" autocomplete="on" required="">
                 </div>
                 <div>
-                    <label for="lastname">Last Name<span>*</span></label>
-                    <input id="lastname" type="text" required="">
+                    <label for="last-name">Last Name<span>*</span></label>
+                    <input id="last-name" name="last-name" type="text" autocomplete="on" required="">
                 </div>
                 <div>
                     <label for="email">Email<span>*</span></label>
-                    <input id="email" type="email" required="">
+                    <input id="email" name="email" type="email" autocomplete="email" required="">
                 </div>
                 <div>
                     <label for="phone">Phone<span>*</span></label>
-                    <input id="phone" type="text" required="">
+                    <input id="phone" name="phone" autocomplete="on" type="tel" required="">
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input id="contact-email" type="radio" value="email" name="pref-method">
+                        <input id="contact-email" type="radio" value="email" name="pref-method" required="">
                         <label for="contact-email">Email</label>
                     </div>
                     <div>
-                        <input id="contact-text" type="radio" value="text" name="pref-method">
+                        <input id="contact-text" type="radio" value="text" name="pref-method" required="">
                         <label for="contact-text">Text</label>
                     </div>
                     <div>
-                        <input id="contact-phone" type="radio" value="phone" name="pref-method">
+                        <input id="contact-phone" type="radio" value="phone" name="pref-method" required="">
                         <label for="contact-phone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
+                    <select id="select-destination" name="destination" required="">
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -298,7 +298,7 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
+                    <select id="select-travel-time" name="travel-time" required="">
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
